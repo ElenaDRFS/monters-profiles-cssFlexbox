@@ -1,12 +1,13 @@
 body {
     background-color: #BAD4AA;
     justify-content: center;
-    
-    
-    
+    display: flex;
+    flex-wrap: wrap;
+        
 }
 
 .title {
+  
     background-color: azure;
     opacity: 0.7;
     border: grey dotted ;
@@ -15,17 +16,18 @@ body {
     margin-right: 40%;
     margin-top: 5%;
     margin-bottom: 5%;
-    flex-wrap: wrap;
-  }
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
 
-h1 {
-    flex-wrap: wrap;
+h1 { 
     color: black;
-    opacity: 1;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 dd {
+    flex-wrap: wrap;
     padding-top: 10%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -34,34 +36,25 @@ dd {
     border-radius: 50%;
     height: 100px;
     width: 100px;
-    flex-direction: column;
-    margin-left: 20%;
-    
-    
-    
-    
-   
-   
+    margin-left: 20%; 
+
 }
 
 section {
-    flex-wrap: wrap;
+    display:flex;   
     margin-bottom: 5%;
-    margin-left: 30%;
-    margin-right: 30%;
-    
-    
-
+    flex-direction: column;
+    box-shadow: 10px 10px 18px 11px rgba(109, 218, 97, 0.593);
+    width: 50%;
+ 
 }
 
 .box {
     display: flex;
+    flex-direction: row;
     background-color: #EBF5DF;
-    flex-direction:row; 
-    padding-top: 2%; 
-     
-    
-       
+    padding-top: 5%; 
+ 
 }
 
 #lastbox {
@@ -71,3 +64,17 @@ section {
 
 
 
+@media (max-width:700px){
+   .section{
+    justify-content: center;
+   }
+ 
+    .foto{
+        margin-left:20%;
+    }
+    
+    .box{
+        flex-direction: column;
+        
+    }
+}
